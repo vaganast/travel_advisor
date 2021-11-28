@@ -21,6 +21,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    console.log(bounds);
     getPlacesData(bounds.sw, bounds.ne).then(data => {
       setPlaces(data);
     });
